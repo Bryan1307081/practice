@@ -1,0 +1,110 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.all {
+    background-color: #2be394;
+    background-image: url(rainbow-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position - 水平 X軸; 垂直 Y軸 +value往下 -value往上 */
+}
+nav {
+    width: 100%;
+    max-width: 900px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 這邊的left是把整個nav從左邊往右移動一半對其中間，
+    在使用 transfrom: translate的水平(X)，
+    把"自己(nav)"往左邊拉回一半。 */
+}
+.logo  {
+    width: 25%;
+    float: left;
+    margin: 10px 0px 0px 0px;
+}
+.logo img {
+    width: 130px;
+}
+.menu {
+    width: 75%;
+    float: right;
+}
+.menu li {
+    float: left;
+    list-style: none;
+    margin: 0px 8px;
+}
+.menu li a {
+        text-decoration: none;
+}
+.menu ul {
+    margin: 66px auto;
+}
+.btn {
+    color: #186611;
+    border: solid 2px #186611 ;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #7af270;
+    text-decoration: none;
+}
+.btn:hover {
+    color: #7af270;
+    border: solid 2px #7af270;
+    background-color: #186611;
+}
+.main {
+    clear: both;
+    padding: 100px 16px;
+    min-height: 300px;
+}
+/* .main .box1 {
+    display: flex;
+    justify-content: flex-end;
+}
+.main .box1 img {
+    width: 250px;
+
+} */
+.img01 {
+    width: 20%;
+    height: auto;
+    float: right;
+    margin-top: 100px;
+}
+.img02 {
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+.main h1 {
+    color: blue;
+}
+.main h2 {
+    color: #ff9900;
+}
+.msg {
+    width: 30%;
+    height: 14rem;
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    border: solid 4px #666;
+    border-radius: 10px;
+}
+.msg:hover {
+    background-color: rgba(70, 227, 104, 0.3);
+}
+.footer {
+    text-align: center;
+    background-color: #323131;
+    padding: 8px 0px;
+    color: #fff;
+    clear: both;
+}

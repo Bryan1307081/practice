@@ -1,0 +1,143 @@
+@charset "UTF-8";
+a {
+    text-decoration: dashed;
+    font-size: 1.25rem;
+}
+.lsn {
+    list-style: none;
+}
+.lc li a {
+    color: #583c18;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+section {
+    position: relative;
+}
+
+#postfMenu, #homeMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#searchBox01 {
+    position: absolute;
+}
+#viewPanel {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    background-color: #f7d6aa;
+    border: solid 2px #583c18;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+li {position: relative;}
+
+.main-img {width: 100%; max-width: 420px;}
+.img-effect {
+    opacity: 0.5;
+    transition: all 0.6s;
+}
+    /* opacity:透明度 0.1~1表示
+    transition: all(所有屬性) + (秒數)s */
+.img-effect:hover {opacity: 1;}
+
+.display-n {display: none;}
+
+.flexbox {display: flex; margin-bottom: 30px;}
+
+.fxjcsb {justify-content: space-between;}
+.fxjcsa {justify-content: space-around;}
+.fxwrap {flex-wrap: wrap;}
+
+.txtalign-c {text-align: center;}
+
+.button01 {
+    background-color: pink;
+    color: darkred;
+    padding: 0.5em 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+    border: solid 2px darkred;
+    border-radius: 10px;
+}
+.button01:hover {
+    background-color: darkred;
+    color: pink;
+    border: solid 2px pink;
+}
+.button02 {
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 0.5em 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+    border: solid 2px darkgreen;
+    border-radius: 10px;
+}
+.button02:hover {
+    background-color: darkgreen;
+    color: lightgreen;
+    border: solid 2px lightgreen;
+}
+.button03 {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 0.5em 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+    border: solid 2px darkblue;
+    border-radius: 10px;
+}
+.button03:hover {
+    background-color: darkblue;
+    color: lightblue;
+    border: solid 2px lightblue;
+}
+
+@media screen and (max-width:800px){
+    .ph-fix-width {width: 97%; margin: 0 auto;}
+    .ph-col1{width: 20.5%;}
+    .ph-col2{width: 47%;}
+    .ph-col3{width: 73.5%;}
+    .ph-col4{width: 100%;}
+}
+@media screen and (min-width:801px){
+    .pc-fix-width {width: 95%; margin: 0 auto;}
+    .pc-col1{width: 6.32%;}
+    .pc-col2{width: 14.84%;}
+    .pc-col3{width: 23.35%;}
+    .pc-col4{width: 31.87%;}
+    .pc-col5{width: 40.39%;}
+    .pc-col6{width: 48.90%;}
+    .pc-col7{width: 57.42%;}
+    .pc-col8{width: 65.93%;}
+    .pc-col9{width: 74.45%;}
+    .pc-col10{width: 82.96%;}
+    .pc-col11{width: 91.48%;}
+    .pc-col12{width: 100%;}
+}
+.footer {
+    text-align: center;
+    background-color: #2e2b2b;
+    color: #fefefe;
+    padding: 16px 0;
+    margin: 0 0 50px 0;
+}

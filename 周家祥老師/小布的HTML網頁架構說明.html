@@ -1,0 +1,416 @@
+<html>
+<!DOCTYPE html> <!--版本宣告 HTML5-->
+<html lang="zh-tw"> <!--宣告網頁所在區域 例zh-tw:台灣,en:en-au:澳洲-->
+
+<head> <!--head主要功能在做宣告，連結外部的資源，撰寫CSS樣式或Javascript程式-->
+    <meta charset="UTF-8"> <!--宣告文字編碼方式 UTF-8:萬國碼-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--將IE轉開啟edge(現在沒有了)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--偵測視窗大小-->
+    <meta name="description" content="網頁內容,第一章網頁的內容"> <!--網頁內容-->
+    <meta name="keywords" content="小布布親親,Bryan"> <!--網頁關鍵字-->
+    <!-- <meta http-equiv="refresh" content="300; url=小布布親親的html的學習網頁.html"> 網頁轉址 (這邊程式碼能不打就不打) -->
+    <title>小布布親親的html的學習網頁</title> <!--網頁標籤-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <!--在cdnjs網頁找font awesome複製link tag-->
+    <!-- CSS= cascading(階層式) style(樣式) sheet(表:自成一格) -->
+    <style> 
+        /*
+        權重:
+            Elements(標籤):  1分    重複使用
+            Class(類別).:     10分   重複使用
+            Id(類別)#:        100分  在一張網頁內只能使用一次
+            內行式:          1000分
+            !Importent:      10000分
+        */
+        h1 {
+            color: #006400a8;
+        }
+
+        h2 {
+            color: burlywood;
+        }
+
+        p {
+            color: red;
+        }
+
+        ul {
+            color: crimson;
+
+        }
+
+        ol {
+            color: rgb(68, 154, 125);
+        }
+
+        .app {
+            color: #9e2fff;
+        }
+
+        #add {
+            color: blue;
+        }
+
+        .box {
+            width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .box h2 {
+            text-align: center;
+        }
+
+        .box input {
+            font-size: 1.25rem;
+            padding: 0.2em;
+            margin: 0.2em auto;
+        }
+
+        .box button {
+            font-size: 1.25rem;
+        }
+    </Style>
+</head> <!--head主要在做宣告，連結外部資源，撰寫CSS樣式或Javacript程式-->
+
+<body> <!--因為有安裝 Chinese Lorem外掛程式 所以可以打ctlorem+數字,就可以生成假文-->
+    <h1>這邊區域是要看到文字，給大家去看得</h1>
+
+    <a href="小布布的星座拉霸機.html" target="_blank">小布布的星座拉霸機</a>
+    <a href="(姓名)隨機碼的程式.html" target="_blank">(姓名)隨機配對</a>
+
+    <P><strong>(中文)指令:ctlorem+你所需要的字數:</strong> 一直未來推廣十二輕易走了感動是由政府，之前金額敵人成績技巧最低他說體會他也日誌這種直接實力日月潭反。<br>
+        <strong>(英文)指令:lorem+你所需要的字數:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        illum? 會產生單字
+    </P>
+    <h1>小布布親親的網頁設計概論</h1>
+
+    <h2><a href="#aaa">字體型態</a></h2> <!--這邊有做網頁內連結的用法-->
+    <h2><a href="#bbb">外部連結使用(聖騎士的影片)</a></h2>
+    <h2><a href="#ccc">一點點小問卷!</a></h2>
+
+    <h2>一、這邊是權重的說明</h2>
+    <p>1.ABCDE:權重"p"1分</p>
+    <p class="app">2.ABCDE:權重"class"10分</p>
+    <p class="app" id="add">3.ABCDE權重"id"100分</p>
+    <p style="color: #a8a805;">4.ABCDE權重"內行式"1000分</p>
+    <p style="color: aqua !important;;">5.權重"!importent"10000分</p>
+
+    <h2>二、這邊是單位尺寸的說明，雖然我完全聽不懂!</h2>
+    <p>
+        文字大小: font-size: 值; (所有的文字大小皆會繼承父系元素)<br>
+
+        單位<br>
+        絕對尺寸:<br>
+        px:像素<br>
+        pt:點<br>
+        cm:公分<br>
+        mm:公厘<br>
+        pc:派卡(日文使用)<br>
+        in:英吋<br>
+        相對尺寸:<br>
+        em: 字元，繼承父系元素<br>
+        rem: 根字元，依照祖系元素html或者body<br>
+        vw: 十分之一的頁面大小，會以視窗縮放大小改變(寬度)<br>
+        vh: 十分之一的頁面大小，會以視窗縮放大小改變(高度)<br>
+        %: 百分比，通常都吃寬度
+    </p>
+
+    <!--網頁文字大小:16pxl，文字粗細:400
+         網頁文字最小:12pxl
+         標題文字<h1>~<h6>、段落<p>-->
+    <h1>標題文字h1:文字大小:32pxl; 2rem個字元+粗</h1>
+    <h2>標題文字h2:文字大小:24pxl; 1.5rem個字元+粗</h2>
+    <h3>標題文字h3:文字大小:19.2pxl; 1.25rem個字元+粗</h3>
+    <h4>標題文字h4:文字大小:16pxl; 1rem個字元+粗</h4>
+    <h5>標題文字h5:文字大小:12.8pxl; 0.8rem個字元+粗</h5>
+    <h6>標題文字h6:文字大小:8pxl; 0.5個rem字元+粗</h6>
+    <P>P:文字大小:16pxl</P>
+
+    <!--        文字型態
+               租體:<b> before html4; <strong> after html5
+               斜體:<i>;<em>
+               加底線:<u>;<ins>
+               刪除文字<del>;<s>
+               高光文字<mark>
+                元素型態:行內元素
+               強迫換行:<br>
+               -->
+    <div style="font-size: 1.5rem;">          
+    <strong id="aaa">小布布親親的文字型態:粗體</strong><br>
+    <em>小布布親親的文字型態:斜體</em><br>
+    <ins>小布布親親的文字型態:加底線</ins><br>
+    <s>小布布親親的文字型態:刪除文字</s><br>
+    <mark>小布布親親的文字型態:高光文字</mark><br>
+    <strong><em><ins>小布布親親的文字型態:三態包起來</ins></em></strong></div>
+
+    <p style="font-size: 1.5rem;">
+        X<sup>2</sup> <br> <!--上標誌:<sup>-->
+        <ins>X<sup>2</sup></ins> <br>
+        <ins>X&#178;</ins> <br> <!--平方標誌-->
+        H<sub>2</sub>O <br><!--下標誌:<sub>-->
+        <ins>H<sub>2</sub>O</ins> <br> <!--有下標誌能不加底線就不加-->
+        25&deg;C <br> <!--度C-->
+        &lt;小布布's Star-sign is ♋💘<mark>小鑠鑠's star-sign is ♌</mark>&gt; <!--左右括弧-->
+    </p>
+
+    <a href="http://www.google.com.tw">Google Search</a><br> <!--原網站開啟視窗-->
+    <a href="http://www.youtube.com/watch?v=JmJfYCyJRp0&t=15s" target="_blank" id="bbb">聖騎士小布VS蝴蝶</a><br> <!--在其他分頁開啟視窗-->
+    <a href="https://www.youtube.com/watch?v=nSMhAffOAYw&t=1038s" target="_blank">聖騎士小布VS龍王</a><br>
+    <a href="mailto:brian741953@gmail.com">小布布's Gmail</a><br> <!--E-mail連結-->
+    <a href="tel:+886981762374">小布布's TEL</a> <!--電話連結-->
+
+    <h2>圖片插入 可愛小臘腸</h2> <!--不是很懂 圖片不能在網路上直接連結-->
+    <img src="可愛小臘腸.jpg" alt="可愛小臘腸" width="250px">
+
+    <h2>清單符號的種類</h2>
+    <ul> <!--黑色圓型-->
+        <li>清單符號(黑色圓型)</li>
+        <li>清單符號(黑色圓型)</li>
+        <li>清單符號(黑色圓型)</li>
+        <li>清單符號(黑色圓型)</li>
+        <li>清單符號(黑色圓型)</li>
+    </ul>
+    <ul type="square"> <!--黑色方形-->
+        <li>清單符號(黑色方形)</li>
+        <li>清單符號(黑色方形)</li>
+        <li>清單符號(黑色方形)</li>
+        <li>清單符號(黑色方形)</li>
+        <li>清單符號(黑色方形)</li>
+    </ul>
+    <ul type="circle"> <!--空心圓形-->
+        <li>清單符號(空心圓形)</li>
+        <li>清單符號(空心圓形)</li>
+        <li>清單符號(空心圓形)</li>
+        <li>清單符號(空心圓形)</li>
+        <li>清單符號(空心圓形)</li>
+    </ul>
+    <ol> <!--連續數字-->
+        <li>清單數字(連續數字)</li>
+        <li>清單數字(連續數字)</li>
+        <li>清單數字(連續數字)</li>
+        <li>清單數字(連續數字)</li>
+        <li>清單數字(連續數字)</li>
+    </ol>
+    <ol type="I"> <!--大寫羅馬數字-->
+        <li>清單數字(大寫羅馬數字)</li>
+        <li>清單數字(大寫羅馬數字)</li>
+        <li>清單數字(大寫羅馬數字)</li>
+        <li>清單數字(大寫羅馬數字)</li>
+        <li>清單數字(大寫羅馬數字)</li>
+    </ol>
+    <ol type="i"> <!--小寫羅馬數字-->
+        <li>清單數字(小寫羅馬數字)</li>
+        <li>清單數字(小寫羅馬數字)</li>
+        <li>清單數字(小寫羅馬數字)</li>
+        <li>清單數字(小寫羅馬數字)</li>
+        <li>清單數字(小寫羅馬數字)</li>
+    </ol>
+    <ol type="A" start="6"> <!--大寫連續英文數字(從F開始連續)-->
+        <li>清單數字(大寫連續英文數字)</li>
+        <li>清單數字(大寫連續英文數字)</li>
+        <li>清單數字(大寫連續英文數字)</li>
+        <li>清單數字(大寫連續英文數字)</li>
+        <li>清單數字(大寫連續英文數字)</li>
+    </ol>
+    <ol type="a" start="25"> <!--小寫連續英文數字(從Y開始連續)-->
+        <li>清單數字(小寫連續英文數字)</li>
+        <li>清單數字(小寫連續英文數字)</li>
+        <li>清單數字(小寫連續英文數字)</li>
+        <li>清單數字(小寫連續英文數字)</li>
+        <li>清單數字(小寫連續英文數字)</li>
+    </ol>
+
+    <p id="ccc">Please, enter your account and password.</p>
+    <form action="#" method="get"> <!--如果是機密資料get要改成post-->
+        <input type="text" name="user" placeholder="enter your account" required><br>
+        <input type="password" name="pass" id="pass" placeholder="enter your password" required>
+        <button type="button" id="btn"> <i class="fa-solid fa-eye" id="eye"> </i>
+            <!--眼睛圖示在font awesome找免費的使用--></button><br>
+
+        <p>what is your gender?</p>
+        <label for="male">
+            <input type="radio" name="gender" id="male" vaule="male">Male</label>
+        <label for="female">
+            <input type="radio" name="gender" id="female" vaule="female">Female</label>
+        <label for="transman">
+            <input type="radio" name="gender" id="transman" vaule="transman" checked>Trans-M</label>
+        <label for="transwoman">
+            <input type="radio" name="gender" id="transwoman" vaule="transwoman">Trans-W<br></label>
+
+        <p>what is your favourite colour?</p>
+        <label for="red">
+            <input type="checkbox" name="colour" id="red">Red
+        </label>
+
+        <label for="green">
+            <input type="checkbox" name="colour" id="green">Green
+        </label>
+
+        <label for="blue">
+            <input type="checkbox" name="colour" id="blue">Bule
+        </label>
+        <br>
+        <button type="submit">Send</button>
+    </form><br> <!--這邊是會連到後端做使用-->
+
+    <div class="box">
+        <h2>BMI檢測器</h2><br>
+        <input type="text" id="height" placeholder="請輸入身高(cm)" maxlength="3"><br>
+        <input type="text" id="weight" placeholder="請輸入體重(kg)" maxlength="3"><br>
+        <button type="button" id="bt">Click</button>
+        <h3 id="result"></h3>
+    </div>
+
+</body>
+
+</html></html>
+<script>
+// 這邊是BMI的Javascript程式
+    let bt = document.getElementById("bt");
+    bt.addEventListener("click", function () {
+        let h = document.getElementById("height");
+        let w = document.getElementById("weight");
+        let bmi = Math.round(w.value / (h.value / 100) ** 2 * 100) / 100;
+        let h3 = document.getElementById("result");
+        h3.textContent = bmi;
+        h3.style.color = "black";
+        if (bmi == Infinity || isNaN(bmi) || bmi == 0) {
+            h3.textContent = "是白癡嗎?! 輸入錯誤，請輸入正確數值!"
+            h3.style.color = "red";
+        } else if (bmi < 18.5) {
+            h3.textContent = "BMI：" + bmi + "，過輕"
+            h3.style.color = "green";
+        } else if (bmi < 24) {
+            h3.textContent = "BMI：" + bmi + "，標準"
+        } else if (bmi < 27) {
+            h3.textContent = "BMI：" + bmi + "，過重"
+            h3.style.color = "blue";
+        } else if (bmi < 30) {
+            h3.textContent = "BMI：" + bmi + "，輕度肥胖"
+            h3.style.color = "orange";
+        } else if (bmi < 35) {
+            h3.textContent = "BMI：" + bmi + "，中度肥胖"
+            h3.style.color = "red";
+        } else {
+            h3.textContent = "BMI：" + bmi + "，重度肥胖"
+            h3.style.color = "darkred";
+        }
+        h.value = "";
+        w.value = "";
+    })
+</script>
+<script>
+// 製作點選眼睛可讓密碼顯示
+    let btn = document.getElementById("btn");
+    let pass = document.getElementById("pass");
+    let eye = document.getElementById("eye");
+    btn.addEventListener("click", function () { /*the click can change to mouseover-*/
+        if (pass.getAttribute("type") == "password") {
+            pass.setAttribute("type", "text");
+            eye.setAttribute("class", "fa-solid fa-eye-slash");
+        } else {
+            pass.setAttribute("type", "password");
+            eye.setAttribute("class", "fa-solid fa-eye");
+        }
+    })  
+</script>
+<script>
+    /*
+    宣告變數:
+        var:全域變數
+        let:區域變數
+        const:常數
+    資料型別:
+        
+        1.數值型態(value):正整數、負整數、小數(浮點數)
+        2.文字型態(type):中/英文、數字
+        3.布林代數:true、false " == "
+        4.未定義(undifined):有設此函數，但沒有值
+        5.陣列、物件:[]、{}
+    檢查:(除錯工具)
+        console.log() " & "= true/false, " | "= or
+        typeof()
+    */
+    var a = 10;
+    var b = 5;
+    var x = 10;
+    var y = "10";
+    var i = true;
+    var j = false;
+    console.log(a + b);
+    console.log(a - b);
+    console.log(a * b);
+    console.log(a / b);
+    console.log(a % b);
+    console.log(a & b);
+    console.log(a | b);
+    console.log(a++); //a=a+1
+    console.log(++a); //a=a+1
+    console.log(b--); //b=b-1
+    console.log(--b); //b=b-1
+    console.log(a ** 2); //a的指數
+    console.log(a = b); //把b值帶入a
+    console.log(a == b); //a與b值作比較
+    console.log(a === b);
+    console.log(x);
+    console.log(y);
+    console.log(typeof (x));
+    console.log(typeof (y));
+    console.log(x == y); //檢查值是否相同
+    console.log(x === y); //檢查值及型別是否相同
+    console.log(i && j);
+    console.log(i || j);
+</script>
+<script> 
+// 這邊是簡易的判斷分數及格 運用if/else
+    let q = 55;
+    if (q < 40) {
+        console.log("fail outright")
+    }
+    else if (q < 60) {
+        console.log("failed")
+    } else {
+        console.log("passed");
+    }
+</script>
+<script> 
+// 這邊是作簡易的BMI標準 運用if/else
+    let h = 169;
+    let w = 55;
+    let bmi = w / (h / 100) ** 2;
+    console.log(bmi);
+    if (bmi < 18) {
+        console.log("過輕");
+    } else if (bmi < 24) {
+        console.log("標準");
+    } else if (bmi < 27) {
+        console.log("過重");
+    } else if (bmi < 30) {
+        console.log("輕度肥胖");
+    } else if (bmi < 34) {
+        console.log("中度肥胖");
+    } else {
+        console.log("重度肥胖");
+    }
+</script>
+<script> /*解釋for迴圈的運用*/
+    for (i = 0; i < 10; i++) { /*for(初始化;範圍;遞增)*/
+        console.log(i);
+    } console.log("最終值:" + i);
+</script>
+<script>
+      // [] = 陣列
+    let c = ["HTML", "CSS", "Javascript", "PHP"]; 
+    console.log(c);
+    console.log(c[1]); /* 陣列的解法使用" [] " 作連結 */
+  
+    // {} = 物件
+    let d = {
+        name: "Gray",
+        age: "18",
+        gender: "male"
+    };
+    console.log(d.name); /* 物件的接法使用" . "作連接 */
+    
+</script>

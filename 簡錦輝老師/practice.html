@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 網頁文件的開始位置 -->
+<html lang="zh-tw">
+<!-- Head標籤用來定義網頁的檔頭區，主要是用來告訴瀏覽器要載入的資源在哪裡 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="practice.js"></script> -->
+    <title>簡錦輝老師的practice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--google icons-->
+    <link rel="stylesheet" href="practice.css">
+</head>
+<!-- 網頁的站展示區 -->
+<body>
+    <div class="pc-fix-width ph-fix-width">
+        <header class="flexbox">
+            <section class="pc-col6">
+                <div><img src="free logo02.svg" alt="logo" width="250px"></div>
+            </section>
+            <section class="pc-col4">
+                <ul class="flexbox fxjcsb lsn">
+                    <li><a href="#" id="home">Home</a>
+                        <ul class="display-n" id="homeMenu">
+                            <li>Personal</li>
+                            <li>Fashion</li>
+                            <li>Travel</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Single</a></li>
+                    <li id="postf"><a href="#">Post Formats</a>
+                        <ul class="display-n" id="postfMenu">
+                            <li>Gallery</li>
+                            <li>Audio</li>
+                            <li>Video</li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </section>
+            
+            <section class="pc-col1">
+                <div class="txtalign-c">
+                    <a href="#" id="search"><i class="material-icons"
+                            style="font-size:36px; color: #e89f0c;">search</i></a>
+                </div>
+                <div class="display-n" id="searchBox01">
+                    <form action="#">
+                        <input type="text" placeholder="Please enter your keyword" maxlength="30">
+                        <input type="button" value="search">
+                    </form>
+                </div>
+
+            </section>
+
+            <section class="pc-col1"> <!--我可以在這邊的容器做加工嗎 剛好這個section包住我想要的容器了 是這樣嗎?-->
+
+                <div class="txtalign-c">
+                    <a href="#" id="viewList"><i class="material-icons"style="font-size:36px; color:#0800ff">view_list</i></a>
+                </div>
+                <div id="viewPanel">
+                    <div class="display-n" id="forward">
+                        <a href="#"><i class="material-icons"
+                                style="font-size:36px; color: #044040;">arrow_forward</i></a>
+                    </div>
+                    <div class="lc">
+                        <div class="display-n" id="searchBox02">
+                            <form action="#">
+                                <input type="text" placeholder="Please enter your keyword" maxlength="30">
+                                <input type="button" value="search">
+                            </form>
+                        </div>
+                        <div class="display-n" id="navSecond">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="display-n" id="recentPost">
+                            <h3>Recent Posts</h3>
+                            <ul>
+                                <li><a href="#">Want to power up your results? shut down your business.</a></li>
+                                <li><a href="#">Want to power up your results? shut down your business.</a></li>
+                                <li><a href="#">Want to power up your results? shut down your business.</a></li>
+                                <li><a href="#">Want to power up your results? shut down your business.</a></li>
+                                <li><a href="#">Want to power up your results? shut down your business.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div class="flexbox fxwrap fxjcsb">
+                <section class="pc-col4 hp-col4">
+                    <div class="img-effect"><img class="main-img" src="images/Alessia.jpg" alt="01"></div>
+                    <div class="button01" id="fashion">Fashion"move in!"</div>
+                </section>
+                <section class="pc-col4 hp-col4">
+                    <div class="img-effect"><img class="main-img" src="images/Maria.jpg" alt="02"></div>
+                    <div class="button02" id="fitness">Fitness"move in!"</div>
+                </section>
+                <section class="pc-col4 hp-col4">
+                    <div class="img-effect"><img class="main-img" src="images/hreat-candy.jpg" alt="03"></div>
+                    <div class="button03" id="travel">Travel"move in!"</div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer"><span>@ made by BryanC Designer</span> <br> 台中市大業路26號!! <br> 0981-457 652</div>
+        </footer>
+    </div>
+    <script src="practice.js"></script>
+    <!-- 如放在後面 windos.onload 這個事件可以不用寫 -->
+</body>
+
+</html>
+<!-- 網頁文件的結束位置 -->
+
+<!-- 瀏覽器就是一個解釋器，解釋HTML, CSS -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{color: brown;};
+    </style>
+</head>
+<body>
+    <button type="button" id="btn">CLICK!</button>
+    <h2 id="user"></h2>
+</body>
+</html>
+<script>
+    let namef = ["陳","范","房","林","吳","張","潘","錢","王","周","蔡","賈","許","彭"];
+    let nameg = ["柏諺","浚鑠","依林","杰倫","星馳","靜雯","光漢","惠妹","孝全","俊傑","慷仁","于晏"];
+    let btnn = document.getElementById("btn");
+    let user = document.getElementById("user");
+    btn.addEventListener("click",function(){
+        let e = Math.floor(Math.random()*14);
+        let f = Math.floor(Math.random()*12);
+        user.textContent = namef[e] + nameg[f];
+    })
+</script>

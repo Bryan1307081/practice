@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座拉霸機</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/> <!--可連結font awesome的icons-->
+    <style>
+    .box{
+        font-size: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <button type="button" id="btn">點我抽獎!</button>
+    <h2 id="user"><h2></div>
+</body>
+</html>
+<script>
+    let chax = ["♋","♌","♓","♏","♐"];
+    let chay = ["♋","♌","♓","♏","♐"];
+    let chaj = ["♋","♌","♓","♏","♐"];
+    let chak = ["♋","♌","♓","♏","♐"];
+    let chal = ["♋","♌","♓","♏","♐"];
+
+    let btn = document.getElementById("btn");
+    let user = document.getElementById("user");
+    btn.addEventListener("click",function(){
+        let x = Math.floor(Math.random()*5);
+        let y = Math.floor(Math.random()*5);
+        let j = Math.floor(Math.random()*5);
+        let k = Math.floor(Math.random()*5);
+        let l = Math.floor(Math.random()*5);
+        user.textContent = chax[x] + chay[y] + chaj[j] + chak[k] + chal[l]
+    })
+    </script>
