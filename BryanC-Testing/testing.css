@@ -1,0 +1,47 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.gallery img{
+    width: 450px;
+    max-width: 100%;
+    opacity: 0.6;
+    box-shadow: 10px 5px 5px #072f38;
+    /* box-shadow: x水平 y垂直 模糊值(px) 顏色; */
+    border-radius: 20px;
+}
+.gallery p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    transition: all 0.6s;
+}
+h1 {
+    font-size: clamp(24px 42px 60px);
+}
+button {
+    font-size: 1.5rem;
+    background-color:
+    color-mix(in srgb, red 20%, yellow 80%);
+}
+button:hover {
+    font-size: 1.5rem;
+    background-color:
+    color-mix(in srgb, blue 50%, white 50%);
+}
+
+.button {
+    font-size: 1.5rem;
+    background-color:
+    color-mix(in srgb, green 80%, white 20%);
+}
+.button:hover {
+    font-size: 1.5rem;
+    background-color:
+    color-mix(in srgb, red 20%, white 80%);
+}

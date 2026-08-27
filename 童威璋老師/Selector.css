@@ -1,0 +1,169 @@
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1;
+
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(89,161,82);
+
+    /* border 盒子模式的框 */
+    border-top: green dashed 8px;
+    /* border-left: green dashed 8px; */
+    border-bottom: green dashed 8px;
+}
+p {
+    font-size: 1.25rem;
+}
+a { 
+    font-size: 1.25rem;
+    border: blue dotted 3px;
+    /* border-left: blue dotted 6px; */
+    background-color: chartreuse;
+    padding: 20px 30px;
+}
+/* .divp {
+    border-left: red solid 5px;
+    border-top: red solid 5px;
+} */
+.boxdiv {
+    background-color: #630e51;
+    /* border: 5px red; */
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+/* BLOCK受控於 Box modal
+block element可以控制 width, height,
+padding, border, margin */
+.chinese {
+    width: 700px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(54,3,50);
+    background-color: #fddff7;
+}
+/* inline不完全受控於 Box modal
+inline element控制不完全 width, height,
+padding, border, margin */
+.display {
+    width: 160px;
+    height: 100px;
+    padding: 40px;
+    border: solid 10px rebeccapurple;
+    margin: 40px;
+    color: #ed6d42;
+    background-color: #f44cd2;
+    display: inline-block;
+    text-align: center;
+    /* display: block, line, line-block */
+}
+#english {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(245,20,20);
+}
+/* 儰元件
+::first-letter,
+::first-line */
+#english::first-letter {
+    color: darkgoldenrod;
+    font-size: 2.5rem;
+}
+.chinese::first-line {
+    font-size: 2.5rem;
+    color: rgb(89, 161, 82);
+}
+.chinese::selection,
+#english::selection {
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 254, 254);
+}
+h2::after{
+    content: "我是::after!";
+    color: blueviolet;
+    font-size: 1rem;
+}
+h1::before {
+    content: "I am a ::Before!";
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+.p-border {
+    color: red;
+    font-weight: 700;
+}
+.div-01 {
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 50px;
+    /* radius圓角不可超過寬或高的二分之一 */
+}
+.div-02 {
+    height: 100px;
+    width: 450px;
+    background-color: coral;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.div-03 {
+    height: 150px;
+    width: 350px;
+    background-color: rgb(115, 255, 80);
+    border-radius: 25px;
+}
+.btn-fill {
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: darkblue;
+    padding: 20px 40px;
+    border: solid 5px darkblue;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.btn-outline {
+    text-decoration: none;
+    color: darkblue;
+    background-color: #f0f0f0;
+    padding: 20px 40px;
+    border: solid 5px #f0f0f0;
+    border-radius: 25px;
+}
+.btn-outline:hover, .btn-fill:hover,
+.btn-outline:active, .btn-fill:active {
+    text-decoration: none;
+    color: rgb(92, 52, 9);
+    background-color: #f779dd;
+    padding: 20px 40px;
+    border: solid 5px #f44cd2;
+    border-radius: 25px;
+}
+/* Box sizing:
+content-box 外擴型(預設) - 內容為主
+border-box 內縮型 - Box為主*/
+.box-01 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: chocolate;
+    border:  solid 16px blue;
+    box-sizing: content-box;
+    /* content-box是預設 */
+}
+.box-02 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: blue;
+    border:  solid 16px chocolate;
+    margin: 30px 0px 50px;
+    box-sizing: border-box;
+}

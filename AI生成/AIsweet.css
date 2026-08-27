@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #5C4033;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+h1 {
+    color: #C85A54;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+h2 {
+    color: #C85A54;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: #8B5E3C;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+a {
+    color: #C85A54;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8B3A35;
+}
+
+
+header {
+    width: 100%;
+    padding: 30px;
+    border-bottom: 3px solid #C85A54;
+    text-align: center;
+}
+
+header p {
+    color: #8B5E3C;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #C85A54;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border: 2px solid #E8C4B8;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.main-container img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+.main-container p {
+    margin: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #C85A54;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    color: #8B3A35;
+}
+
+
+.dessert-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    border: 2px solid #E8C4B8;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.dessert-card img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.dessert-card p {
+    text-align: justify;
+}
+
+
+.price {
+    color: #C85A54;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center !important;
+}
+
+
+table {
+    width: 100%;
+    border: 2px solid #C85A54;
+}
+
+th {
+    padding: 12px;
+    border: 1px solid #C85A54;
+    color: #C85A54;
+    font-weight: 700;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #E8C4B8;
+}
+
+
+aside {
+    margin-bottom: 50px;
+    padding: 30px;
+    border: 3px solid #C85A54;
+    border-radius: 20px;
+    text-align: center;
+}
+
+aside strong {
+    color: #C85A54;
+    font-size: 22px;
+}
+
+
+footer {
+    padding: 30px;
+    border-top: 3px solid #C85A54;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}

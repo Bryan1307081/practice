@@ -1,0 +1,254 @@
+/* Design system:
+typograghy
+font-family: Black Ops One, system-ui
+font-size: 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 2rem, 2.5rem, 3rem
+font-weight: 400 / 700
+line-height: 1.2 / 1.5
+letter-spacing: 0 / -1 */
+
+/* ------Border Radius------ 
+outline: 4px
+hightlight: 25px */
+
+/* ------Global------ */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 700px;
+    margin: auto;
+    font-weight: 400;
+    font-family: "Black Ops One", "Lato", system-ui;
+}
+h1, h2 {
+    font-weight: 700;
+}
+h1 {
+    color: #ad3fa8;
+    /* background-color: rgb(98, 232, 107); */
+    text-align: center;
+    line-height: 1.5; 
+    letter-spacing: -1px;
+}/* line-height: px, percentage, ems;
+標題設定不要超過 1.2~ =<1.5
+一般文字設定在1.5 ~ 2
+
+(字距)letter-spacing: 常用單位px */
+
+/* font-weight: 做字體的粗細 */
+h2 {
+    color: #ab6844;
+    text-align: center;
+}
+
+/* font-style: 做字體的型態(斜體使用) */
+h3, h4 {
+    font-style: italic;
+    color: #eca68d;
+}
+
+p {
+    color: #0d2e0b;
+    text-align: justify;
+}
+p::first-letter {
+    color: #72661e;
+    font-size: 1.5rem;
+}
+/* ------Component------ */
+/* span {
+    font-size: 3rem;
+    color: #f51414;
+    text-decoration: line-through rgba(137, 66, 30, 0.564) wavy;
+} */
+
+li {
+    list-style: lower-greek;
+}
+/*其他語法:decimal, decimal-leading-zero, upper-alpha*/
+
+.it-1 {
+    list-style: upper-roman;
+}
+/* class = . */
+
+#it-a2 {
+    list-style: circle;
+}
+/* id = # */
+
+/* a {
+    text-decoration: underline rgba(54, 3, 50, 0.3) dashed };  */
+
+/*寫法text-decoration: 1, 2, 3, ;*/
+/* 
+其他語法:
+1.overline, line-through(刪除線)
+2.RGBa; Red Green Blue alpha=透明度0.1~0.9 opeacity=不透明
+3.solid, dotted, dashed, double, wavy
+*/
+.btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border-radius: 8px;
+}
+.btn-primary-outline:link,
+.btn-primary-outline:visited {
+    background-color: #fefefe ;
+    color: #3e95ad;
+    border: solid 2px #3e95ad;
+    padding: 8px;
+    display: inline-block;
+    margin: 4px 0px 0px;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:active {
+    background-color: #3e95ad ;
+    color: #1b404b;
+    border: solid 2px #1b404b;
+    padding: 8px;
+    display: inline-block;
+}
+
+.btn-secondary-outline:link,
+.btn-secondary-outline:visited {
+    background-color: #fefefe ;
+    color: #b0b43d;
+    border: solid 2px #b0b43d;
+    padding: 8px;
+    display: inline-block;
+    margin: 4px 0px 0px;
+}
+.btn-secondary-outline:hover,
+.btn-secondary-outline:active {
+    background-color: #b0b43d ;
+    color: #464717;
+    border: solid 2px #464717;
+    padding: 8px;
+    display: inline-block;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+    background-color: #3e95ad ;
+    color: #fefefe;
+    padding: 10px 16px;
+    display: inline-block;
+}
+.btn-secondary:link,
+.btn-secondary:visited {
+    background-color: #b0b43d;
+    color: #fefefe;
+    padding: 12px 38px;
+    display: inline-block;
+}
+/*
+a:link - 未點過 - 針對<a>
+a:visited - 以點過 - 針對<a> <<這邊兩組會設一組
+
+a:hover - 滑鼠懸浮在上面 - 非針對<a>
+a:active - 滑鼠點左鍵未放開 - 非針對<a> <<這邊兩組會設一組
+*/
+.btn-primary:hover,
+.btn-primary:active,
+.btn-secondary:hover,
+.btn-secondary:active {
+    background-color: chocolate;
+    color: #fefefe;
+    text-decoration: underline #fcc87e;
+}
+.logo-medium {
+    width: 100px;
+}
+.logo-small {
+    width: 70px;
+}
+/* ------Setions------ */
+/* ------Navigation Bar------ */
+.navbar {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-btn-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* ------Hero section------ */
+.hero-section {
+    text-align: center;
+   
+}
+.hero-h1 {
+    margin-bottom: 10px;
+}
+.hero-p {
+    margin-bottom: 60px;
+}
+.hero-section-div {
+    text-align: center;
+}
+.hero-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+/* ------Feature section------ */
+.feature-section {
+}
+.feature-main-h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.feature-img {
+    width: 250px;
+}
+/* ------CTA section------ */
+.cta-section {
+    text-align: center;
+}
+.cta-card {
+    background-color: #abf4a1;
+    padding: 40px 80px;
+    border-radius: 24px;
+    margin: auto;
+}
+.cta-h2 {
+    margin-bottom: 30px;
+}
+.hightlight {
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 16px 4px 8px;
+    margin: 0px 8px;
+    border-radius: 15px;
+    display: inline-block;
+}
+.hightlight-primary {
+    background-color: slateblue;
+    color: #f5fadb;
+}
+.hightlight-secondary {
+    background-color: #f0d783;
+    color: #0d2e0b;
+}
+/* ------Footer------ */
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.social-icons-container {
+    display: flex;
+    gap: 2rem;
+}
+.social-icons {
+    width: 36px;
+}

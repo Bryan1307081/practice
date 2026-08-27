@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>童威璋老師</title> <!--分頁標籤名稱-->
+    <style>
+        .box {
+            text-align: center;
+            color: #075844;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>清單型用法</h2>
+    <ul type="circle">
+        <li>
+            <h3>背包</h3>
+            <ol type="i">
+                <li>手機</li>
+                <li>行動電源</li>
+                <li>護照</li>
+            </ol>
+        </li><br>
+        <li>
+            <h3>行李箱</h3>
+            <ol type="a">
+                <li>換洗衣服</li>
+                <li>盥洗用品</li>
+                <li>小禮品</li>
+                <li>范浚鑠的愛心
+                    <uL>
+                        <li>控制欲</li>
+                        <li>佔有慾</li>
+                    </uL>
+                </li>
+            </ol>
+        </li><br>
+        <li>
+            <h3>錢包</h3>
+            <ol>
+                <li>鈔票</li>
+                <li>證件</li>
+                <li>零錢</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <div class="box">
+        <h3><strong>假圖生成網站 https://picsum.photos</strong></h3>
+        <h3>圖片(無效果)</h3>
+        <img src="https://picsum.photos/350" alt="picsum image"><br>
+        <h3>圖片(灰階)</h3>
+        <img src="https://picsum.photos/300/350?grayscale" alt="picsum image"><br>
+        <h3>圖片(模糊value=1)</h3>
+        <img src="https://picsum.photos/250?blur=1" alt="picsum image">
+        <h3>圖片(模糊value=5)</h3>
+        <img src="https://picsum.photos/250?blur=5" alt="picsum image">
+        <h3>圖片(模糊value=10 max.)</h3>
+        <img src="https://picsum.photos/250?blur=10" alt="picsum image">
+        <h3>清單式假圖</h3>
+        <ol>
+            <li><img src="https://picsum.photos/150/200" alt=""></li>
+            <li><img src="https://picsum.photos/200/" alt=""></li>
+            <li><img src="https://picsum.photos/300" alt=""></li>
+        </ol>
+    </div>
+
+    <h2><strong>表格練習</strong></h2>
+    <table border="3">
+        <tr>
+            <th>表格標題1</th>
+            <th>表格標題2</th>
+            <th>表格標題3</th>
+        </tr>
+        <tr>
+            <td>內容d1</td>
+            <td>內容d2</td>
+            <td>內容d3</td>
+        </tr>
+        <tr>
+            <td>內容dd1</td>
+            <td>內容dd2</td>
+            <td>內容dd3</td>
+        </tr>
+    </table><br>
+    <table border="5">
+        <tr>
+            <th colspan="2">表格標題1+2</th>
+            <!-- <th>表格標題2</th> -->
+            <th>表格標題3</th>
+        </tr>
+        <tr>
+            <th>內容d1</th>
+            <th>內容d2</th>
+            <th>內容d3</th>
+        </tr>
+        <tr>
+            <th>內容dd1</th>
+            <th>內容dd2</th>
+            <th>內容dd3</th>
+        </tr>
+    </table><br>
+    <table border="2">
+        <tr>
+            <th colspan="3">表格標題1+2+3</th>
+            <!-- <th>表格標題2</th> -->
+            <!-- <th>表格標題3</th> -->
+        </tr>
+        <tr>
+            <td>內容d1</td>
+            <td>內容d2</td>
+            <td>內容d3</td>
+        </tr>
+        <tr>
+            <td>內容dd1</td>
+            <td>內容dd2</td>
+            <td>內容dd3</td>
+        </tr>
+    </table><br>
+    <table border="1">
+        <tr>
+            <th rowspan="2">表格標題1</th>
+            <th>表格標題2</th>
+            <th>表格標題3</th>
+        </tr>
+        <tr>
+            <!-- <td>內容d1</td> -->
+            <td>內容d2</td>
+            <td>內容d3</td>
+        </tr>
+        <tr>
+            <td>內容dd1</td>
+            <td>內容dd2</td>
+            <td>內容dd3</td>
+        </tr>
+    </table><br>
+    <table border="4">
+        <tr>
+            <th rowspan="3">表格標題1</th>
+            <th>表格標題2</th>
+            <th>表格標題3</th>
+        </tr>
+        <tr>
+            <!-- <td>內容d1</td> -->
+            <td>內容d2</td>
+            <td>內容d3</td>
+        </tr>
+        <tr>
+            <!-- <td>內容dd1</td> -->
+            <td>內容dd2</td>
+            <td>內容dd3</td>
+        </tr>
+    </table><br>
+    <table border="2">
+        <tr>
+            <th colspan="2" rowspan="2">表格標題1</th>
+            <th colspan="2">表格標題2+3</th>
+            <!-- <th>表格標題3</th> -->
+            <th>表格標題4</th>
+        </tr>
+        <tr>
+            <td rowspan="2">內容d1+dd3</td>
+            <td>內容d2</td>
+            <td>內容d3</td>
+        </tr>
+        <tr>
+            <td>內容dd1</td>
+            <td>內容dd2</td>
+            <!-- <td>內容dd3</td> -->
+            <td>內容dd4</td>
+            <td>內容dd5</td>
+        </tr>
+
+        <h2>新表格的寫法，超級麻煩! 加入表格容器:thead/tbody/tfoot</h2>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>表格標題1</th>
+                    <th>表格標題2</th>
+                    <th>表格標題3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>內容d1</td>
+                    <td>內容d2</td>
+                    <td>內容d3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>內容dd1</td>
+                    <td>內容dd2</td>
+                    <td>內容dd3</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <p>
+            加上thead, tbody, tfoot切成上中下的區域
+        </p>
+    </table>
+
+    <h3><strong><ins>我真的很傻眼! * 號為必填</ins></strong></h3>
+    <form action="#" method="post"> <!--get 尋找或查詢(拿回),post註冊或登入(送出)-->
+        <label for="use-text">*輸入帳號/enter account</label><!--先lable 再input/select-->
+        <input type="text" id="use-text" name="user-text" placeholder="必填" required maxlength="12">
+        <!--
+        for = id, type = name
+        文字類:text, password, email, data
+        選項:radio(單選),checkbox(複選)
+        -->
+        <label for="password">*密碼/password</label>
+        <input type="password" name="user-password" id="password" placeholder="必填" required maxlength="12">
+
+        <label for="useremail">Email</label>
+        <input type="email" name="user-email" id="useremail" placeholder="abc@gmail.com" maxlength="50"><br>
+
+        <label for="text-area">請留言</label>
+        <textarea name="survey" id="text-area" rows="5" cols="40" placeholder="請留言你的評論" maxlength="200"></textarea><br>
+        <!--rows = 高;列, cols = 寬;欄-->
+
+        <h2>selection的用法</h2>
+        <label for="dropmenu">喜歡的類型:</label>
+        <select name="drop-item" id="dropmenu"> <!--name = value(整合,送後端)-->
+            <option value="dogs">狗狗</option> <!--name = value(跟後端有關)-->
+            <option value="wolfs">小狼</option>
+            <option value="pigs">小豬</option>
+            <option value="cats">喵喵</option>
+            <option value="bears">大熊</option>
+        </select><br>
+        <!--
+        HTML:預留位置 (選擇器)
+        CSS:介入位置
+        JavaScript:修改位置
+        -->
+        <h2>(Radio的用法) 婚姻狀況:</h2>
+        <input type="radio" name="marital_status" id="marital_single" value="single">
+        <label for="marital_single">Single</label>
+
+        <input type="radio" name="marital_status" id="marital_single" value="married">
+        <label for="marital_single">Married</label>
+
+        <input type="radio" name="marital_status" id="marital_single" value="divorced">
+        <label for="marital_single">Divorced</label>
+
+        <input type="radio" name="marital_status" id="marital_single" value="separated">
+        <label for="marital_single">Separated</label>
+
+        <input type="radio" name="marital_status" id="marital_single" value="widowed">
+        <label for="marital_single">Widowed</label><br>
+        <!--單選的name必須設置一樣, value設置不一樣-->
+
+        <h2>(Checkbox的用法)喜歡的顏色:</h2>
+        <input type="checkbox" name="red" id="coulor">
+        <label for="coulor">Red</label>
+
+        <input type="checkbox" name="orange" id="coulor">
+        <label for="coulor">Orange</label>
+
+        <input type="checkbox" name="yellow" id="coulor">
+        <label for="coulor">Yellow</label>
+
+        <input type="checkbox" name="green" id="coulor">
+        <label for="coulor">Green</label>
+
+        <input type="checkbox" name="blue" id="coulor">
+        <label for="coulor">Blue</label>
+
+        <input type="checkbox" name="purple" id="coulor">
+        <label for="coulor">Purple</label><br>
+        <!--name設置不一樣, 沒有value-->
+
+        <button type="submit">送出/submit</button>
+        <button type="reset">清除/reset</button><br>
+
+    </form>
+
+</body>
+
+</html>
