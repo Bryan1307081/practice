@@ -1,0 +1,25 @@
+https://cdnjs.com/ <!--要搭配這個做連結-->
+
+<i class="fa-solid fa-star"></i> //星星icons//
+<i class="fa-solid fa-heart"></i> //愛心icons//
+<i class="fa-solid fa-bomb"></i> //炸彈icons//
+
+https://picsum.photos/200 //假圖生成網站！//
+
+	↓清單符號↓ 寫法 ul/ol { list-style: decimal; }
+decimal          /* 1, 2, 3 */
+decimal-leading-zero /* 01, 02, 03 */
+
+lower-alpha      /* a, b, c */
+upper-alpha      /* A, B, C */
+
+lower-roman      /* i, ii, iii */
+upper-roman      /* I, II, III */
+
+lower-greek      /* α, β, γ */
+
+disc             /* ● */
+circle           /* ○ */
+square           /* ■ */
+
+none             /* 不顯示符號 */
