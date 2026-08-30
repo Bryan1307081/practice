@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>縮排凸排/相對絕對位置</title>
+    <style>
+        /* 段落凸排/縮排的用法! 排版會比較好看*/
+        p {
+            text-align: justify;
+        }
+
+        .p0 {
+            text-indent: 2em;
+            padding: 0 0 0 2em;
+        }
+
+        .p1 {
+            text-indent: -4em;
+            padding: 0 0 0 6em;
+        }
+
+        .p2 {
+            text-indent: -2em;
+            padding: 0 0 0 8em;
+        }
+
+        /* 絕對定位 - 把螢幕當成畫布，把物件放在畫布的指定位置*/
+        .dog {
+            width: 200px;
+            position: absolute;
+            top: 0;
+            right: 200px;
+            z-index: 10;
+        }
+
+        .hedgehog {
+            width: 200px;
+            position: absolute;
+            top: 120px;
+            right: 140px;
+            z-index: 20;
+        }
+
+        .shock {
+            width: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* 相對定位 - 需要給一個框架，讓建物在框架裡面做擺放*/
+        .box01 {
+            background-color: lightgreen;
+            width: 700px;
+            height: 500px;
+            position: relative;
+        }
+
+        .dog2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hedgehog2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .shock2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>1
+    <h1>蔡依林睡前2小時Me Time　醫揭「降載」助眠：個人節奏更重要</h1>
+    <p class="p0">
+        天后蔡依林過去曾分享自己夜間9點半就寢，近期更分享晚上7點左右便會關掉手機，
+        暫停社交活動及工作，把時間留給泡澡、放鬆及自己的「Me Time」。
+        台灣慢性阻塞性肺病學會副秘書長、台北榮民總醫院睡眠醫學中心執行長、
+        胸腔部主治醫師孫傳硯指出，睡前預留一段時間從事低刺激的活動讓大腦「降載」，
+        確實有助於入睡及睡眠品質，但不必人人照著蔡依林預留2個多小時，
+        可先從睡前半小時至1小時開始嘗試，逐漸找出適合自己的節奏，
+        若過度要求自己每天須完成固定的睡前程序，反而可能增加焦慮感，
+        較不利於身心放鬆。
+    </p>
+    <h2>大腦無法直接「關機」　醫：需時間慢慢降載</h2>
+    <p class="p1">
+        段落一、孫傳硯醫師受訪表示，人體大腦不像電腦一樣能夠瞬間關機，如果到了晚上睡前，
+        仍像白天一樣持續接收或處理大量資訊，包括滑手機、玩手遊，
+        或觀看能刺激感官的影片，甚至繼續處理白天工作，
+        大腦往往難以立即從忙碌狀態轉換至休息狀態，
+        因此在正式睡覺前安排一段「降載期」，讓大腦逐漸減少接收外界刺激，
+        心情也會逐漸放鬆，有助於進入較為穩定的身心狀態，為接下來的睡眠做好準備。
+
+    <p class="p2">
+        (一)「感冒吃維他命C」好得快？1萬人研究揭結果 很多人補錯幾十年。
+        「感冒吃維他命C」好得快？1萬人研究揭結果 很多人補錯幾十年。
+        「感冒吃維他命C」好得快？1萬人研究揭結果 很多人補錯幾十年。
+    </p>
+
+    <p class="p2">
+        (二)比滑手機可怕！醫喊「1舉動」超傷眼：害白內障、黃斑部病變。
+        比滑手機可怕！醫喊「1舉動」超傷眼：害白內障、黃斑部病變。
+        比滑手機可怕！醫喊「1舉動」超傷眼：害白內障、黃斑部病變。
+    </p>
+    </p>
+    <p class="p1">
+        段落二、至於是否得像蔡依林一樣，提前2個多小時開始準備睡覺？孫傳硯醫師認為因人而異，
+        每個人所需的時間不同，一般民眾可以先從睡前半小時至1小時嘗試，
+        再慢慢找到適合自己的節奏。他也提醒，如果過度要求自己「每天睡前一定要留足2小時放鬆」，
+        甚至因為沒有做到而產生挫折，反而可能失去原本希望身心放鬆的意義，
+        因此不必將睡前預留的時間長度變成硬性規定。
+    </p>
+    <h2>睡前泡澡、伸展、看書皆可　重點是「低刺激」</h2>
+    <p class="p1">
+        段落三、蔡依林曾透露，她在關掉手機後會泡澡放鬆，或做一些自己想做的事，
+        享受沒有社交活動的個人時光。孫傳硯醫師指出，一般民眾在睡前預留的時間內，
+        除了泡澡，另可進行簡單的瑜伽伸展或冥想，以及聆聽較平靜的音樂或閱讀等活動，
+        不需限定特定形式，重點是選擇刺激程度較低，又能幫助自己放鬆的事情，
+        若能每天維持類似的低刺激睡前習慣，久而久之，
+        大腦也較易將這些活動與「一天的忙碌即將結束，是時候準備睡覺」產生連結。
+    </p>
+    <p class="p1">
+        段落四、孫傳硯醫師特別提醒，除了睡前活動的內容，「在哪裡做」也很重要，
+        若經常躺在床上滑手機、使用電腦或處理工作，
+        可能使大腦對「床鋪」與「睡眠」之間的連結逐漸變得鬆散，也因此，
+        睡前活動可盡量安排在床鋪以外的地方，例如沙發或其他床鋪以外的舒適空間，
+        等到產生睡意後再上床，讓大腦盡可能維持「上床就是準備睡覺」的印象。
+    </p>
+    <h2>偶爾晚睡不用太憂心　補眠也別打亂原有作息</h2>
+    <p class="p1">
+        段落五、不過，規律睡眠不代表每天都必須「分秒不差」，孫傳硯醫師指出，民眾即使平時作息規律，
+        也難免會因工作或社交活動而晚睡，偶爾一、兩天晚睡，對多數人的影響通常較有限，
+        民眾不必過於擔憂，真正需要留意的是長期晚睡、熬夜，
+        或平日作息規律、到了周末卻日夜顛倒，導致作息落差過大，
+        都可能讓身體反覆面臨類似「調時差」的情況。
+    </p>
+    <p class="p1">
+        段落六、孫傳硯醫師建議，如果前一晚較晚睡，隔天感到疲倦時可以適度補眠，
+        不必硬撐，例如原本上午8點起床，可稍微延後至9點或9點半，
+        白天仍感到疲倦也可短暫午睡。補眠並沒有適用所有人的固定時數，
+        仍須考量個人睡眠需求及睡眠品質，他舉例，一般可比平時多睡約1至2小時，
+        但應避免因補眠使起床時間較平時大幅延後，進一步影響原有作息。
+    </p>
+    <img class="dog"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBIkrQe-mY93M6W7jVO9JCXT664EeBH_rquQhK0P3pHIk8cFPZI0m7nE&s"
+        alt="cute dog">
+    <img class="hedgehog"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClyAv0S3_9lu5YzZatwb8-U5JpGkQzfqAXrks8a4quNPj85a3fQg1lqY&s"
+        alt="cute hedgehog">
+    <img class="shock"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTHaX0HP1X9ucKlOneaFxpXwWL-9dtzZoHmuLvWR6Jss2HRe9RbjefYA&s"
+        alt=" shock">
+
+    <div class="box01">
+        <img class="dog2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBIkrQe-mY93M6W7jVO9JCXT664EeBH_rquQhK0P3pHIk8cFPZI0m7nE&s"
+            alt="cute dog">
+        <img class="hedgehog2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClyAv0S3_9lu5YzZatwb8-U5JpGkQzfqAXrks8a4quNPj85a3fQg1lqY&s"
+            alt="cute hedgehog">
+        <img class="shock2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTHaX0HP1X9ucKlOneaFxpXwWL-9dtzZoHmuLvWR6Jss2HRe9RbjefYA&s"
+            alt=" shock">
+    </div>
+</body>
+
+</html>

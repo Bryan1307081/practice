@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prctice03</title>
+    <style>
+        body {
+            margin: 0 100px;
+            background-image: linear-gradient(45deg, #ef637f, #f5cd49);
+        }
+
+        table {
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        .contentimg {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            opacity: 0.7;
+            box-shadow: 5px 5px gray;
+        }
+        .contentimg:hover {
+            transform: scale(1.08);
+            opacity: 1;
+            transition: 0.6s;
+        }
+        .logo {
+            background-image: linear-gradient(90deg, #ef637f, #f5cd49);
+            text-align: center;
+        }
+        .logo img {
+            width: 100%;
+            height: 140px;
+        }
+        .thtitle {
+            text-align: center;
+            background-color: #eba550;
+            padding: 6px;
+            border: 0;
+            color: #274306;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .title {
+            background-image: linear-gradient(90deg,#9a2878,pink);
+        }
+        .tdfooter {
+            text-align: center;
+            background-color: #a52378;
+            padding: 6px;
+        }
+        .nav {
+            width: 120px;
+            text-align: center;
+        }
+        .nav a {
+            text-decoration: none;
+            font-weight: 600;
+            background-color: #f78feb;
+            padding: 6px;
+            color: #274306;
+            border: solid 2px #274306;
+            border-radius: 8px;
+            display: inline-block
+        }
+        .nav a:hover {
+            background-color: #274306;
+            color: orange;
+        }
+        .contenttext {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>巫宏鈞老師第五堂課</h1>
+    <h2>巢狀表格</h2>
+    <table>
+        <tr>
+            <td class="logo"><img src="logo03.svg" alt="logoimg"></td>
+        </tr>
+        <tr>
+            <td><div class="thtitle">我的logo 不是花QQ</div></td>
+        </tr>
+        <tr>
+            <td>
+                <!-- 插入巢狀表格(開始) -->
+                <table>
+                    <tr>
+                        <td>
+                        <!-- 插入巢狀表格2(開始) -->
+                         <table class="nav">
+                            <tr>
+                                <td><a href="">蝴蝶蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">文心蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">石檞蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="">嘉德麗雅蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">喜姆比地蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">石荳蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">萬代蘭</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                         </table>
+                        <!-- 插入巢狀表格2(結束) -->    
+                        </td>
+                        <td class="contenttext">
+                            <!-- 插入巢狀表格2(開始) -->
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="title">老闆臉臭反而更好吃？</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>網友紛紛笑稱：「看狗胖不胖真的準，胖到像冬瓜的絕對是神店」、「夫妻一邊吵架一邊切肉，刀法還超快」、「包手鐵板燒師父炒出來的高麗菜特別有火候」、「這才是真正的台灣米其林指標！」。這些趣味觀察不僅呈現出台灣小吃文化的獨特風貌，也成為民眾走訪巷弄尋找美食時的另類參考依據。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="title">台語歌后黃乙玲消失11年！</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>黃乙玲特別寫下親筆訊息表示，談到陳盈潔是她非常尊敬的前輩，在台語歌壇興盛時期更是不可或缺的重要存在。黃乙玲回憶道，以前每次在後台碰到，陳姐總是給予她滿滿的鼓勵與加油打氣，「讓晚輩的我內心得到一股暖流，正因為她坦然、直率的個性，在圈內的好人緣是真真實實的存在」。
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- 插入巢狀表格2(結束) -->
+                        </td>
+                        <td><img src="img06.jpg" alt="復圖片" class="contentimg"></td>
+                    </tr>
+                </table>
+                <!-- 插入巢狀表格(結束) -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="tdfooter">Copy Right 2026 @Designer BryanC</div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

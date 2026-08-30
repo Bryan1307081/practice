@@ -41,6 +41,6 @@ button {
     padding:  10px 30px;
     border-radius: 5px;
     border: 0;
-    cursor: pointer;
+    cursor: pointer
     /* cursor:鼠標移到特定物件 >> 變換圖示 */
 }

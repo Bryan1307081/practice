@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <p id="test">我是測試用的段落</p>
+    <h2>變數</h2>
+    <p>
+        變數是用來儲存資料的容器，可以用來存放數字、文字、布林值等各種資料的型態。 <br>
+        在Javascript中，可以使用 "var" "let" 或 "const" 關鍵字來宣告變數。 <br>
+        <br>
+        X<sup>2</sup> + X + 1 = ? <br>
+        上面的 "X" 就是變數，可以用來表示一個未知的數值。
+        "1" 就是一個常數。
+    </p>
+
+    <h2>自訂函數</h2>
+    <p>
+        函數是用來封裝一段可以重複使用的程式碼區塊，可以用來持行特定的任務或計算。 <br>
+        在Javascript中，可以使用 function() 關鍵字來宣告一個函數。
+    <pre>
+            //副程式
+            function 函數名稱(參數){
+                //函數內的程式碼
+                //不需要回傳
+            };
+        </pre>
+    </p>
+    <!-- #msg01 當成顯示結果的區域 -->
+    <p id="msg01">MSG01結果顯示在這裡</p>
+    <input type="text" name="" id="mytext" placeholder="這邊打文字" maxlength="30">
+    <button onclick="showMessage()">執行</button>
+    <hr>
+    <p>MVC 是一種軟體設計模式，用來將應用程式分成三個主要部分: <br>
+        模型(Model)、視圖(View)、控制器(Controler)。
+    </p>
+    <hr>
+
+    <h2>有回傳值的函數</h2>
+    <p>
+        有回傳值的函數可以使用 return 關鍵字來回傳一個值，這個值可以被呼叫函數的地方並使用。
+    <pre>
+            //有回傳值的函數
+            function 函數名稱(參數){
+                //函數內的程式碼
+                return 回傳值;
+            };
+        </pre>
+    </p>
+    <!-- #msg02 當成顯示結果的區域 -->
+    <p id="msg02">MSG02結果顯示在這裡</p>
+    <input type="button" value="計算" onclick="document.getElementById('msg02').innerText = sum(3, 4)">
+    <hr>
+
+    <p id="msg03">MSG03結果顯示在這裡</p>
+    <hr>
+
+    <h2>物件</h2>
+    <p>物件是用來表示具有屬性和方法的實體，可以用來封裝相關的資料行為。</p>
+    <p id="msg04">MSG04結果顯示在這裡</p>
+    <hr>
+    <h2>陣列</h2>
+    <p>陣列是用來存儲多個值的資料庫，可以用來表示一組相關資料。</p>
+    <p id="msg05">Array Message</p>
+    <hr>
+    <p id="msg06">Scores Message</p>
+    <hr>
+    <h2>判斷式</h2>
+    <p>判斷式是用來根據條件執行不同程式碼區塊的結構，可以用來實現分支的邏輯。</p>
+    <pre>
+        if (條件){
+            //條件為ture執行的程式碼
+        } else {
+            //條件為false執行的程式碼
+        };
+    </pre>
+    <p>多條件 if 判斷式</p>
+    <pre>
+         if (條件){
+            //條件為true執行的程式碼
+        } else if {
+            //條件為true執行的程式碼
+        } eles {
+            //以上條件皆不為true執行的程式碼
+        };
+    </pre>
+    <hr>
+
+    <script>
+        // alert 是一個用來顯示彈出視窗的函式
+        // alert("Hello world!");
+
+        document.write("<h2>這是使用 document.write() 方法寫入的標題");
+
+        // 動態修改第一個 h1 標題的顏色為darkgreen
+        document.getElementsByTagName("h1")[0].style.color = "darkgreen";
+
+        // 動態修改 id 為"test"的段落為darkred
+        document.getElementById("test").style.color = "darkred";
+
+        console.log("I'm a log message from Javascript");
+        console.log(165 & 122);
+        // 區域變數
+        let x = 8;
+        let y = -3;
+        console.log((x * x + x) / x + y);
+
+        hello();
+        function hello() {
+            let x = 10
+            console.log(x + 2)
+        };
+        // 呼叫函數，並傳入參數
+        // showMessage("這邊是message的參數");
+        // 自訂函數(副程式)
+        function showMessage(message) {
+            // 將參數 message 的值顯示在網頁上
+            message = document.getElementById("mytext").value;
+            document.getElementById("msg01").innerText = message;
+            document.getElementById("msg01").style.color = "darkgreen";
+            document.getElementById("msg01").style.fontSize = "32px";
+        };
+
+        // 帶有回傳值的函數
+        function sum(a, b) {
+            return a + b
+        };
+
+        let a = 10;
+        var b = 20;
+        const PI = 3.14159;
+        let total = sum(a + PI, b + PI);
+        document.getElementById("msg03").innerText = total;
+
+        var car = {
+            model: "Toyota",
+            color: "Black",
+            year: "2026",
+            start: function(){
+                return "this car is starting"
+            }, 
+            stop: function(){
+                return "but this car will be stoping"
+            }
+        };
+        car.model = "BryanC";
+
+        document.getElementById("msg04").innerText = 
+        "Car name:" + car.model + " Car color:" + car.color +
+        " Car year:" + car.year + ". " + car.start() + ", " + car.stop();
+
+
+        var cars = ["Ford","Toyota","Mazda",]
+        document.getElementById("msg05").innerText =
+        "Car Array:" + cars[0] + ", " + cars[1] + ", " + cars[2];
+
+        var chinses_scores = [98, 56, 48, 99, 55, 75, 85, 96, 14, 88];
+        var math_scores = [45, 46, 99, 76, 15, 33, 57, 69, 12, 79];
+        var english_scores = [45, 25, 69, 84, 63, 21, 67, 78, 89, 91];
+        document.getElementById("msg06").innerHTML = chinses_scores[0] + math_scores[0] + english_scores[0] + "<br>";
+        document.getElementById("msg06").innerHTML += (chinses_scores[0] + math_scores[0] + english_scores [0])/3;
+
+        console.log(chinses_scores.length);
+        console.log(english_scores.indexOf(78)); //找尋元素的位置(找不到:-1)
+        console.log(math_scores.join("分, "));
+
+        chinses_scores.reverse(); //陣列反轉
+        console.log(chinses_scores.join("分, "));
+        english_scores.push(100); //在陣列末尾加入一個新元素
+        console.log(english_scores.join("分, "));
+        chinses_scores.unshift(99);//在陣列開頭加入一個新元素
+        console.log(chinses_scores.join("分, "));
+        math_scores.pop();//刪除陣列末尾的元素
+        console.log(math_scores.join("分, "));
+        english_scores.shift();//刪除陣列開頭的元素
+        console.log(english_scores.join("分, "));
+
+
+        var cars2 = [
+            {model: "FORD", color: "White", year: "2026"},
+            {model:"TOYOTA", color:"Darkblue", year:"2023"},
+            {model:"HONDA", color:"Gray",year:"2024"}
+        ];
+        document.getElementById("msg05").innerHTML += "<br>" + cars2[2].model + ", " + cars2[2].color + ", " + cars2[2].year;
+        
+     
+        
+    </script>
+</body>
+
+</html>

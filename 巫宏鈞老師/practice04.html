@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice04</title>
+</head>
+
+<body>
+    <h1>多媒體播放</h1>
+    <h2>音樂播放</h2>
+    <!-- .wav, .wma, .mp3 -->
+    <audio src="張惠妹 - 快樂眼淚.mp3" controls>張惠妹 - 快樂眼淚</audio>
+    <h2>影片播放</h2>
+    <!-- 支援 .mp4(串流), .webm, .ogg -->
+    <video src="#" controls>小鑠鑠剪輯車車影片</video>
+    <h2>流量問題</h2>
+    <p>
+        伺服器創串流影片時，會佔用較多寬頻，建議使用嵌入的影片。 <br>
+        架設網站主要需要固定IP，我第一個跟Hinet申請的固網是 4M/4M <br>
+        架設我的影片是190mb (1080p) 上傳時間為:190/4 = 47.5s
+    </p>
+    <h2>嵌入影片</h2>
+    <iframe width="1044" height="539" src="https://www.youtube.com/embed/3LpaCMS4mPI" title="【楓之谷 Artale】拓荒龍王團 (聖騎士視角)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+</body>
+
+</html>
